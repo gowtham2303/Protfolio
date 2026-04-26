@@ -21,8 +21,8 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'COMPUTE - AI Agents for Distributed Computing',
-  description: 'Deploy autonomous AI agents on distributed infrastructure. Offload complex tasks to intelligent workers that run 24/7.',
+  title: 'Alex Chen - Full Stack Developer & Cloud Architect',
+  description: 'Senior Full Stack Developer based in San Francisco. 8+ years building scalable systems and leading engineering teams. Specializing in React, Node.js, and cloud infrastructure.',
   generator: 'v0.app',
 }
 
