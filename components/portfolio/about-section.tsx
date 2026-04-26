@@ -35,7 +35,7 @@ export function AboutSection() {
             <div className="relative aspect-[4/5] overflow-hidden">
               <img
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Upscaled%20Image%20%2812%29-ng3RrNnsPMJ5CrtOjcPTmhHg01W11q.png"
-                alt="Professional portrait"
+                alt="Gowtham Sree - Professional portrait"
                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
@@ -58,8 +58,8 @@ export function AboutSection() {
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
               }`}
             >
-              Turning complex problems into{" "}
-              <span className="text-muted-foreground">elegant solutions.</span>
+              Where infrastructure meets{" "}
+              <span className="text-muted-foreground">product.</span>
             </h2>
 
             <div 
@@ -68,13 +68,13 @@ export function AboutSection() {
               }`}
             >
               <p>
-                I&apos;m a Senior Full Stack Developer based in San Francisco, with a passion for building scalable web applications and leading high-performing engineering teams.
+                I&apos;m an Information Systems Engineer at Lumen Technologies, Bengaluru. I work where infrastructure meets product — cloud systems, automation pipelines, and full-stack applications that actually ship.
               </p>
               <p>
-                With over 8 years of experience in the tech industry, I&apos;ve worked with startups and Fortune 500 companies alike, helping them architect systems that handle millions of users and process terabytes of data daily.
+                ECE graduate from Sri Venkateswara University with an 8.72 GPA. Started as an intern at Lumen and converted full-time within 7 months. Before Lumen, I built production web apps at ZettaByte Plus and led the technical team at Sigmoid 2025 — a national-level tech symposium.
               </p>
               <p>
-                When I&apos;m not coding, you&apos;ll find me contributing to open-source projects, mentoring junior developers, or exploring the latest in cloud infrastructure and AI technologies.
+                Won 2nd place at InWinHack building an AI chatbot, scored AIR 18 in AMECET, and achieved 93.6 percentile in JEE Main. Also played basketball for the ECE department and volunteered with NSS.
               </p>
             </div>
 
@@ -85,9 +85,9 @@ export function AboutSection() {
               }`}
             >
               {[
-                { label: "Location", value: "San Francisco, CA" },
-                { label: "Education", value: "MS Computer Science" },
-                { label: "Languages", value: "English, Mandarin" },
+                { label: "Location", value: "Bengaluru, India" },
+                { label: "Education", value: "B.Tech ECE, 8.72 GPA" },
+                { label: "Company", value: "Lumen Technologies" },
                 { label: "Availability", value: "Open to offers" },
               ].map((fact) => (
                 <div key={fact.label}>

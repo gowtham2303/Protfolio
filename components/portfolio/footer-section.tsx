@@ -11,9 +11,8 @@ const footerLinks = [
 ];
 
 const socialLinks = [
-  { name: "GitHub", href: "https://github.com" },
-  { name: "LinkedIn", href: "https://linkedin.com" },
-  { name: "Twitter", href: "https://twitter.com" },
+  { name: "GitHub", href: "https://github.com/gowtham2303" },
+  { name: "LinkedIn", href: "https://linkedin.com/in/gowthamsree" },
 ];
 
 export function FooterSection() {
@@ -37,11 +36,11 @@ export function FooterSection() {
             {/* Brand Column */}
             <div>
               <a href="#" className="inline-flex items-center gap-2 mb-6">
-                <span className="text-3xl font-display text-white">Alex Chen</span>
+                <span className="text-3xl font-display text-white">Gowtham Sree</span>
               </a>
 
               <p className="text-white/50 leading-relaxed mb-8 max-w-xs text-sm">
-                Full Stack Developer based in San Francisco. Building scalable systems and leading engineering teams.
+                Information Systems Engineer at Lumen Technologies. Building cloud infrastructure, automation pipelines, and full-stack applications.
               </p>
 
               {/* Social Links */}
@@ -83,16 +82,16 @@ export function FooterSection() {
               <h3 className="text-sm font-medium text-white mb-6">Contact</h3>
               <ul className="space-y-4 text-sm text-white/40">
                 <li>
-                  <a href="mailto:alex.chen@example.com" className="hover:text-white transition-colors">
-                    alex.chen@example.com
+                  <a href="mailto:gowtham.sree@example.com" className="hover:text-white transition-colors">
+                    gowtham.sree@example.com
                   </a>
                 </li>
                 <li>
-                  <a href="tel:+14155551234" className="hover:text-white transition-colors">
-                    +1 (415) 555-1234
+                  <a href="https://linkedin.com/in/gowthamsree" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+                    linkedin.com/in/gowthamsree
                   </a>
                 </li>
-                <li>San Francisco, California</li>
+                <li>Bengaluru, Karnataka, India</li>
               </ul>
             </div>
           </div>
@@ -101,7 +100,7 @@ export function FooterSection() {
         {/* Bottom Bar */}
         <div className="py-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-white/30">
-            &copy; 2025 Alex Chen. All rights reserved.
+            &copy; {new Date().getFullYear()} Gowtham Sree. All rights reserved.
           </p>
 
           <div className="flex items-center gap-4 text-sm text-white/30">

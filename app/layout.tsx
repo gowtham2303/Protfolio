@@ -21,8 +21,8 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Alex Chen - Full Stack Developer & Cloud Architect',
-  description: 'Senior Full Stack Developer based in San Francisco. 8+ years building scalable systems and leading engineering teams. Specializing in React, Node.js, and cloud infrastructure.',
+  title: 'Gowtham Sree - Information Systems Engineer & Full Stack Developer',
+  description: 'Information Systems Engineer at Lumen Technologies, Bengaluru. Building cloud infrastructure, automation pipelines, and full-stack applications. Azure, Terraform, React, Node.js.',
   generator: 'v0.app',
 }
 

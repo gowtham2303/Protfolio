@@ -5,32 +5,32 @@ import { ArrowUpRight } from "lucide-react";
 
 const experiences = [
   {
-    company: "TechCorp Inc.",
-    role: "Senior Full Stack Developer",
-    period: "2021 - Present",
-    description: "Leading a team of 8 engineers building a real-time analytics platform processing 10M+ events daily. Architected microservices infrastructure on AWS, reducing costs by 40%.",
-    technologies: ["React", "Node.js", "AWS", "Kubernetes"],
+    company: "Lumen Technologies",
+    role: "Information Systems Engineer",
+    period: "Aug 2025 - Present",
+    description: "Cloud infrastructure management with Microsoft Azure. Terraform-based Infrastructure as Code (IaC). Enterprise-scale automation using Power Automate. M365 ecosystem integration and optimization.",
+    technologies: ["Azure", "Terraform", "M365", "PowerShell", "Python"],
   },
   {
-    company: "StartupXYZ",
+    company: "Lumen Technologies",
+    role: "Information Systems Intern",
+    period: "Feb 2025 - Aug 2025",
+    description: "Converted from intern to full-time in 7 months. Implemented automation workflows reducing manual tasks by 40%. Contributed to Azure infrastructure projects and developed internal tools.",
+    technologies: ["Azure", "Power Automate", "Scripting"],
+  },
+  {
+    company: "ZettaByte Plus",
     role: "Full Stack Developer",
-    period: "2019 - 2021",
-    description: "Built the core product from 0 to 1, scaling from MVP to 500K+ users. Implemented CI/CD pipelines and established engineering best practices.",
-    technologies: ["Vue.js", "Python", "GCP", "PostgreSQL"],
+    period: "Jan 2024 - Apr 2024",
+    description: "Built and shipped production-ready web applications for EdTech platform. Designed RESTful APIs and database schemas. Created responsive UI components with React.",
+    technologies: ["React", "Node.js", "Express", "MongoDB", "TypeScript"],
   },
   {
-    company: "Digital Agency Co.",
-    role: "Frontend Developer",
-    period: "2017 - 2019",
-    description: "Developed responsive web applications for Fortune 500 clients. Led frontend architecture decisions and mentored junior developers.",
-    technologies: ["React", "TypeScript", "GraphQL", "AWS"],
-  },
-  {
-    company: "Freelance",
-    role: "Web Developer",
-    period: "2016 - 2017",
-    description: "Built custom websites and web applications for small businesses. Managed full project lifecycle from requirements to deployment.",
-    technologies: ["JavaScript", "PHP", "MySQL", "WordPress"],
+    company: "Sigmoid 2025",
+    role: "Technical Team Head",
+    period: "2024 - 2025",
+    description: "Led the development team from concept to deployment for national-level tech symposium. Handled 10,000+ visitors during the event. Integrated registration and payment systems.",
+    technologies: ["HTML5", "CSS3", "JavaScript", "PHP", "MySQL"],
   },
 ];
 
@@ -86,7 +86,7 @@ export function ExperienceSection() {
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
               }`}
             >
-              A journey through startups, agencies, and enterprise companies, building products that scale.
+              From intern to engineer — a journey of building cloud infrastructure, automation systems, and production-ready applications.
             </p>
           </div>
         </div>
@@ -95,7 +95,7 @@ export function ExperienceSection() {
         <div className="space-y-0">
           {experiences.map((exp, index) => (
             <div
-              key={exp.company}
+              key={`${exp.company}-${exp.role}`}
               className={`group border-t border-border last:border-b py-8 lg:py-12 transition-all duration-700 ${
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
               }`}

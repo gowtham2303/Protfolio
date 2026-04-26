@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { ArrowUpRight, Mail, MapPin, Phone } from "lucide-react";
+import { ArrowUpRight, Mail, MapPin, Linkedin } from "lucide-react";
 
 export function ContactSection() {
   const [isVisible, setIsVisible] = useState(false);
@@ -59,7 +59,7 @@ export function ContactSection() {
             }`}
           >
             <p className="text-lg text-muted-foreground leading-relaxed mb-12">
-              Have a project in mind or want to discuss opportunities? I&apos;d love to hear from you. Let&apos;s create something amazing together.
+              I&apos;m always open to interesting conversations, whether it&apos;s about a project, collaboration, or just talking tech. Response time: Within 24 hours.
             </p>
 
             <div className="space-y-8">
@@ -69,20 +69,20 @@ export function ContactSection() {
                 </div>
                 <div>
                   <span className="text-xs font-mono text-muted-foreground block mb-1">Email</span>
-                  <a href="mailto:alex@example.com" className="text-foreground hover:text-muted-foreground transition-colors">
-                    alex.chen@example.com
+                  <a href="mailto:gowtham.sree@example.com" className="text-foreground hover:text-muted-foreground transition-colors">
+                    gowtham.sree@example.com
                   </a>
                 </div>
               </div>
 
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 border border-border flex items-center justify-center shrink-0">
-                  <Phone className="w-5 h-5 text-muted-foreground" />
+                  <Linkedin className="w-5 h-5 text-muted-foreground" />
                 </div>
                 <div>
-                  <span className="text-xs font-mono text-muted-foreground block mb-1">Phone</span>
-                  <a href="tel:+14155551234" className="text-foreground hover:text-muted-foreground transition-colors">
-                    +1 (415) 555-1234
+                  <span className="text-xs font-mono text-muted-foreground block mb-1">LinkedIn</span>
+                  <a href="https://linkedin.com/in/gowthamsree" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-muted-foreground transition-colors">
+                    linkedin.com/in/gowthamsree
                   </a>
                 </div>
               </div>
@@ -93,7 +93,8 @@ export function ContactSection() {
                 </div>
                 <div>
                   <span className="text-xs font-mono text-muted-foreground block mb-1">Location</span>
-                  <p className="text-foreground">San Francisco, California</p>
+                  <p className="text-foreground">Bengaluru, Karnataka, India</p>
+                  <p className="text-sm text-muted-foreground">Available: Remote, Hybrid, On-site</p>
                 </div>
               </div>
             </div>
@@ -102,17 +103,41 @@ export function ContactSection() {
             <div className="mt-12 pt-12 border-t border-border">
               <span className="text-xs font-mono text-muted-foreground block mb-4">Find me on</span>
               <div className="flex gap-6">
-                {["GitHub", "LinkedIn", "Twitter"].map((platform) => (
+                {[
+                  { name: "GitHub", href: "https://github.com/gowtham2303" },
+                  { name: "LinkedIn", href: "https://linkedin.com/in/gowthamsree" },
+                ].map((platform) => (
                   <a
-                    key={platform}
-                    href="#"
+                    key={platform.name}
+                    href={platform.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-sm text-foreground hover:text-muted-foreground transition-colors flex items-center gap-1 group"
                   >
-                    {platform}
+                    {platform.name}
                     <ArrowUpRight className="w-3 h-3 opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-all" />
                   </a>
                 ))}
               </div>
+            </div>
+
+            {/* Looking For */}
+            <div className="mt-8 p-6 border border-border bg-muted/30">
+              <span className="text-xs font-mono text-muted-foreground block mb-4">Looking for</span>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li className="flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
+                  Full-time opportunities in Cloud/DevOps/Full Stack
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
+                  Freelance projects
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
+                  Open source collaborations
+                </li>
+              </ul>
             </div>
           </div>
 
@@ -130,7 +155,7 @@ export function ContactSection() {
                   </label>
                   <Input
                     id="name"
-                    placeholder="John Doe"
+                    placeholder="Your name"
                     className="bg-transparent border-border h-12 rounded-none focus:border-foreground transition-colors"
                   />
                 </div>
@@ -141,7 +166,7 @@ export function ContactSection() {
                   <Input
                     id="email"
                     type="email"
-                    placeholder="john@example.com"
+                    placeholder="your@email.com"
                     className="bg-transparent border-border h-12 rounded-none focus:border-foreground transition-colors"
                   />
                 </div>

@@ -4,20 +4,20 @@ import { useEffect, useRef, useState } from "react";
 
 const skillCategories = [
   {
+    title: "Cloud & Infrastructure",
+    skills: ["Microsoft Azure", "Terraform", "M365", "Cloud Provisioning", "Infrastructure Monitoring"],
+  },
+  {
+    title: "Process Automation",
+    skills: ["Power Automate", "CI/CD Pipelines", "PowerShell", "Shell Scripting", "System Integration"],
+  },
+  {
     title: "Frontend",
-    skills: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Vue.js", "GraphQL"],
+    skills: ["React", "TypeScript", "Next.js", "Tailwind CSS", "HTML5/CSS3", "Responsive Design"],
   },
   {
-    title: "Backend",
-    skills: ["Node.js", "Python", "Go", "PostgreSQL", "MongoDB", "Redis"],
-  },
-  {
-    title: "Cloud & DevOps",
-    skills: ["AWS", "GCP", "Docker", "Kubernetes", "Terraform", "CI/CD"],
-  },
-  {
-    title: "Tools & Others",
-    skills: ["Git", "Linux", "Figma", "Jest", "Datadog", "Agile"],
+    title: "Backend & Database",
+    skills: ["Node.js", "Express.js", "Python", "PostgreSQL", "MySQL", "MongoDB"],
   },
 ];
 
@@ -104,10 +104,10 @@ export function SkillsSection() {
         <div className="mt-20 lg:mt-32 overflow-hidden">
           <div className="marquee whitespace-nowrap">
             <span className="inline-block text-[120px] lg:text-[200px] font-display text-white/5 tracking-tight">
-              React &middot; TypeScript &middot; AWS &middot; Node.js &middot; Python &middot; Kubernetes &middot;&nbsp;
+              Azure &middot; Terraform &middot; React &middot; Node.js &middot; Python &middot; Power Automate &middot;&nbsp;
             </span>
             <span className="inline-block text-[120px] lg:text-[200px] font-display text-white/5 tracking-tight">
-              React &middot; TypeScript &middot; AWS &middot; Node.js &middot; Python &middot; Kubernetes &middot;&nbsp;
+              Azure &middot; Terraform &middot; React &middot; Node.js &middot; Python &middot; Power Automate &middot;&nbsp;
             </span>
           </div>
         </div>

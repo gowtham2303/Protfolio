@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
 
-const roles = ["Full Stack Developer", "Cloud Architect", "DevOps Engineer", "Tech Lead"];
+const roles = ["Information Systems Engineer", "Cloud Infrastructure Specialist", "Full Stack Developer", "Automation Expert"];
 
 export function HeroSection() {
   const [isVisible, setIsVisible] = useState(false);
@@ -86,7 +86,7 @@ export function HeroSection() {
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
               }`}
             >
-              <span className="block">Alex Chen</span>
+              <span className="block">Gowtham Sree</span>
               <span className="block text-muted-foreground text-[0.5em]">
                 {roles[roleIndex]}
               </span>
@@ -99,7 +99,7 @@ export function HeroSection() {
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
             }`}
           >
-            Building scalable systems and leading engineering teams. 8+ years crafting digital experiences that matter.
+            Information Systems Engineer at Lumen Technologies. Building cloud infrastructure, automation pipelines, and full-stack applications that actually ship.
           </p>
 
           {/* CTA Buttons */}
@@ -131,13 +131,13 @@ export function HeroSection() {
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
             }`}
           >
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-white/50 hover:text-white transition-colors">
+            <a href="https://github.com/gowtham2303" target="_blank" rel="noopener noreferrer" className="text-white/50 hover:text-white transition-colors">
               <Github className="w-5 h-5" />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-white/50 hover:text-white transition-colors">
+            <a href="https://linkedin.com/in/gowthamsree" target="_blank" rel="noopener noreferrer" className="text-white/50 hover:text-white transition-colors">
               <Linkedin className="w-5 h-5" />
             </a>
-            <a href="mailto:alex@example.com" className="text-white/50 hover:text-white transition-colors">
+            <a href="mailto:gowtham.sree@example.com" className="text-white/50 hover:text-white transition-colors">
               <Mail className="w-5 h-5" />
             </a>
           </div>
@@ -152,9 +152,9 @@ export function HeroSection() {
       >
         <div className="max-w-[1400px] mx-auto flex items-start gap-10 lg:gap-20">
           {[
-            { value: "8+", label: "years experience" },
-            { value: "50+", label: "projects delivered" },
-            { value: "20+", label: "happy clients" },
+            { value: "8.72", label: "GPA Score" },
+            { value: "AIR 18", label: "AMECET Rank" },
+            { value: "10K+", label: "Users Served" },
           ].map((stat) => (
             <div key={stat.label} className="flex flex-col gap-2">
               <span className="text-3xl lg:text-4xl font-display text-white">{stat.value}</span>
