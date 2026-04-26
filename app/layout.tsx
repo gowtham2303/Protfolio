@@ -21,8 +21,8 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'COMPUTE - AI Agents for Distributed Computing',
-  description: 'Deploy autonomous AI agents on distributed infrastructure. Offload complex tasks to intelligent workers that run 24/7.',
+  title: 'Gowtham Sree - Information Systems Engineer & Full Stack Developer',
+  description: 'Information Systems Engineer at Lumen Technologies, Bengaluru. Building cloud infrastructure, automation pipelines, and full-stack applications. Azure, Terraform, React, Node.js.',
   generator: 'v0.app',
 }
 
